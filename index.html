@@ -374,7 +374,7 @@ nav.compact .nav-logo img{height:44px!important}
    3. COLECCIONES — editorial, filas dinámicas
 ───────────────────────────────────────────────────── */
 .col-s{
-  padding:clamp(4rem,7vw,8rem) clamp(1.2rem,4vw,4.5rem) clamp(5rem,8vw,9rem);
+  padding:clamp(5rem,9vw,10rem) clamp(1.2rem,4vw,4.5rem) clamp(5rem,8vw,9rem);
   background:var(--blanco);
 }
 
@@ -1013,6 +1013,34 @@ footer::before{
   60%,100%{transform:translateX(200%)}
 }
 
+
+/* ── Colecciones intro ──────────────────────────────── */
+.col-intro{
+  max-width:720px;
+  margin-bottom:clamp(3rem,5vw,5rem);
+  padding-bottom:clamp(2rem,3vw,3rem);
+  border-bottom:1px solid var(--piedra);
+}
+.col-intro .slbl{
+  display:flex;align-items:center;gap:1rem;
+  font-family:var(--cin);font-size:.72rem;font-weight:600;
+  letter-spacing:.42em;text-transform:uppercase;color:var(--oro);
+  margin-bottom:1.2rem;
+}
+.col-intro .slbl::before{
+  content:"";width:28px;height:1.5px;
+  background:var(--oro);border-radius:2px;
+}
+.col-intro h2{
+  font-family:var(--cor);font-size:clamp(2.4rem,4.5vw,4rem);
+  font-weight:300;color:var(--ink);line-height:1.05;
+  margin-bottom:1rem;
+}
+.col-intro p{
+  font-family:var(--mul);font-size:clamp(.9rem,1.6vw,1.05rem);
+  font-weight:300;color:var(--grisL);line-height:1.85;
+}
+
 </style>
 </head>
 <body>
@@ -1071,7 +1099,7 @@ footer::before{
     <div class="hero-eye eyebrow">Artesanía de Compostela</div>
 
     <h1 class="hero-title">
-      <span class="title-line"><span class="title-inner go">Ultreia.</span></span>
+      <span class="title-line"><span class="title-inner go">Ultreia,</span></span>
       <span class="title-line"><span class="title-inner go">Peregrino.</span></span>
     </h1>
 
@@ -1132,9 +1160,9 @@ footer::before{
 <!-- ═══════ 3. COLECCIONES ═══════ -->
 <section class="col-s" id="colecciones">
   <div class="col-intro">
-    <span class="slbl rv">Artesanía Jacobea</span>
-    <h2 class="rv d1">Nuestras Colecciones</h2>
-    <p class="rv d2">Cinco colecciones únicas, hechas a mano en Galicia, para llevar el espíritu del Camino contigo.</p>
+    <span class="slbl rv d1">Artesanía Jacobea</span>
+    <h2 class="rv d2">Nuestras Colecciones</h2>
+    <p class="rv d3">Cinco colecciones únicas, hechas a mano en Galicia,<br>para llevar el espíritu del Camino contigo.</p>
   </div>
   <div class="col-rows">
     <div class="col-row rv d1">
