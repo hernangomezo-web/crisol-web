@@ -170,7 +170,7 @@
     function parar() { clearInterval(timer); timer = null; }
     function reiniciar() {
       parar();
-      if (!reduceMotion) timer = setInterval(function () { ir(actual + 1); }, 6000);
+      if (!reduceMotion) timer = setInterval(function () { ir(actual + 1); }, 4000);
     }
 
     dots.forEach(function (d, i) { d.setAttribute('aria-current', String(i === 0)); });
